@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>ENYAA Saké & Champagne</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="Description" content="パリにある日本酒とシャンパーニュがテーマのレストランです。">
+	<meta name="Keywords" content="sake, Palais-Royal, restaurant japonais, sushi, poulet, 日本酒, パレ・ロワイヤル, 和食, 鯖寿司, ENYAA, Paris, Champagne">
+	<meta property="og:image" content="img_fr/head01.jpg">
+	<link href="css/enyaastyle.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/layerBoard.css" media="all" />
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.layerBoard.js"></script>
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+		$(function() {
+			$(".menu-btn").click(function() {
+				$("#menu-list").slideToggle(300);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			var pagetop = $('.pagetop');
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 70) {
+					pagetop.fadeIn();
+				} else {
+					pagetop.fadeOut();
+				}
+			});
+			pagetop.click(function() {
+				$('body, html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+		});
+	</script>
+	<script>
+		$(function() {
+			$('#layer_board_area').layerBoard({
+				alpha: 0.8
+			});
+			$('#layer_board_area').layerBoard({
+				limitMin: 0
+			});
+		})
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+</head>
+
+<body>
+	<script>
+		(function(d, s, id, h) {
+			var ftjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			var js = d.createElement(s);
+			js.id = id;
+			js.src = "https://cdn.formitable.com/sdk/v1/ft.sdk.min.js";
+			h && (js.onload = h);
+			ftjs.parentNode.insertBefore(js, ftjs);
+		}(document, 'script', 'formitable-sdk', function() {
+			FT.load('Analytics');
+		}));
+	</script>
+	<div class="ft-widget-b2" data-restaurant="528d6297" data-open="1000" data-open-mobile="false" data-color="#9d8d83" data-language="fr" data-tag="Website" data-toolbar="true" data-toolbar-mobile="true"></div>
+	<!-- layer_board -->
+	<!--
+	<div id="layer_board_area">
+		<div class="layer_board_bg"></div>
+		<div class="layer_board">
+			日頃よりご愛顧頂き誠にありがとうございます。<br>
+			<br>
+			長らく休業していたレストラン営業ですが、<br>
+			Restaurant EnYaaは6月9日(水)より営業を再開致します。<br>
+			またこの場所で皆様にお会い出来るのを心より楽しみにしております。<br>
+			尚、テイクアウトのお料理（月曜定休、受付10時から20時）も引き続きご用意しております。<br>
+			<br>
+			<div class="layer_board_tit"><a href="menu.pdf">［ メニュー詳細はこちらから (→PDF) ］</a></div>
+			皆様のご利用を心よりお待ちしております。<br>
+			<br>
+			<br>
+			Chers Amis, Clients du Restaurant EnYaa<br>
+			<br>
+			Nous sommes ravis de pouvoir réouvrir les portes de notre établissement le 9 Juin prochain et vous accueiller de nouveau.<br>
+			En attendant, nous continuerons à vous proposer des plats à emporter ou en livraison<br>
+			( fermé le lundi, prise de commande de 10h à 20h) .<br>
+			<br>
+			<div class="layer_board_tit"><a href="menu.pdf">［ Cliquez ici pour menu (→PDF) ］</a></div>
+			Encore merci à toutes et à tous pour votre soutien et n’hésitez pas à réserver votre table !<br>
+			<br>
+			ENYAAスタッフ一同 L'équipe ENYAA<br>
+			+33 (0)1 40 26 78 25<br>
+			<br>
+			<div class="btn_close"><a href="#"><img src="img_fr/bnt_close.svg" alt="close"></a></div>
+		</div>
+	</div>
+	-->
+	<!-- //layer_board -->
+
+
+
+	<div id="wrapper">
+
+		<nav id="gNav">
+			<ul>
+				<li><a href="#head"><img src="img_fr/nav_top.png" alt="TOP" class="btn" id="btn_1st"></a></li>
+				<!--
+				<li><a href="#news"><img src="img_fr/nav_news.png" alt="NEWS" class="btn"></a></li>
+				-->
+				<li><a href="#message"><img src="img_fr/nav_concept.png" alt="CONCEPT" class="btn"></a></li>
+				<li><a href="#pdfmenu"><img src="img_fr/nav_menus.png" alt="MENUS" class="btn"></a></li>
+				<li><a href="#drink"><img src="img_fr/nav_sake.png" alt="SAKE & CHAMPAGNE" class="btn"></a></li>
+				<li><a href="#contact"><img src="img_fr/nav_contact.png" alt="CONTACT" class="btn"></a></li>
+				<li><a href="#foot"><img src="img_fr/nav_plan.png" alt="PLAN" class="btn"></a></li>
+			</ul>
+		</nav>
+
+		<article id="top">
+			<h1>ENYAA Saké & Champagne</h1>
+			<div class="headslider">
+				<div><img src="img_fr/head01.jpg" class="pc" alt="ENYAA Sake & Champagne"></div>
+				<div><img src="img_fr/head02.jpg" class="pc" alt="ENYAA Sake & Champagne"></div>
+				<div><img src="img_fr/head03.jpg" class="pc" alt="ENYAA Sake & Champagne"></div>
+				<div><img src="img_fr/head04.jpg" class="pc" alt="ENYAA Sake & Champagne"></div>
+			</div>
+			<div class="headslider_sp">
+				<div><img src="img_fr/sp_head01.jpg" alt="ENYAA Sake & Champagne"></div>
+				<div><img src="img_fr/sp_head02.jpg" alt="ENYAA Sake & Champagne"></div>
+				<div><img src="img_fr/sp_head03.jpg" alt="ENYAA Sake & Champagne"></div>
+				<div><img src="img_fr/sp_head04.jpg" alt="ENYAA Sake & Champagne"></div>
+				<div><img src="img_fr/sp_head05.jpg" alt="ENYAA Sake & Champagne"></div>
+			</div>
+			<a href="#gNav"><img src="img_fr/sp_berger.png" id="berger" class="sp nemu-btn" alt="ENYAA"></a>
+			<a href="#gNav"><img src="img_fr/head_logo.png" id="menu" class="pc nemu-btn" alt="ENYAA"></a>
+			<a href="index.html"><img src="img_fr/head_fra_on.png" id="french" class="pc" alt="French Web site"></a>
+			<a href="index_eng.html"><img src="img_fr/head_eng_off.png" id="english" class="pc" alt="English Web site"></a>
+			<div class="sp" id="reserve"><a href="#contact">RESERVATION</a></div>
+		</article>
+		<!--
+	<article id="news">
+		<div id="newstitle">News</div>
+		<div class="ifrm-container">
+			<iframe class="ifrm" scrolling="auto" src="news.html"></iframe>
+		</div>
+	</article>
+-->
+		<article id="message">
+			<h2>
+				<p>凛としてオーセンティックでありながらも、<br>
+					常に新たな発見があるような、<br class="sp">遊び心ある空間がパレ・ロワイヤルそばに。</p>
+				<p id="center">A proximité du Palais-Royal, venez vivre l'expérience unique de<br>
+					l'élégance enchantée, l'authenticité et la joie de Enyaa</p>
+				<p><img src="img_fr/message_logo.png" id="menu" class="pc" alt="ENYAA"></p>
+			</h2>
+		</article>
+
+
+		<article id="pdfmenu">
+			<div id="pdfmenu_title">Menu du Restaurant ENYAA</div>
+			<div class="pdfmenu_menu">
+				<a href="pdf/EnyaaMenuDiner.pdf" target="_blank">
+					Menu Dîner<br>
+				</a>
+				<!--<br>-->
+				<a href="pdf/EnyaaMenuAlacarte.pdf" target="_blank">
+						Menu À la carte<br>
+				</a>
+					<span>Mardi - Samedi 19:00-22:00 (L.O.)</span>
+				
+			</div>
+			<div class="pdfmenu_menu">
+				<a href="pdf/EnyaaMenuDejeuner.pdf" target="_blank">
+					Menu Déjeuner<br>
+					<span>Mardi - Samedi 12:00-14:00 (L.O.)</span>
+				</a>
+			</div>
+			<div class="pdfmenu_menu">
+				<a href="pdf/EnyaaMenuDimanche.pdf" target="_blank">
+					Menu Dimanche<br>
+					<span>Dimanche 13:00-19:00 (18:30 L.O.)</span>
+				</a>
+			</div>
+			<div class="pdfmenu_menu">
+				<a href="pdf/EnyaaCarteDesBoissons.pdf" target="_blank">
+					Carte des Boissons
+				</a>
+			</div>
+			<div class="pdfmenu_menu">
+				<a href="pdf/EnyaaCarteDeSakeetChampagne.pdf" target="_blank">
+					Carte de Saké et Champagne
+				</a>
+			</div>
+			<div class="pdfmenu_menu">
+				<a href="pdf/EnyaaMenuEmporter.pdf" target="_blank">
+					Menu Emporter<br>
+					<span>Mardi - Samedi 11:00-13:00 (L.O.), 18:00-19:00 (L.O.)</span><br>
+					<span>Dimanche 12:00-18:00 (L.O.)</span>
+				</a>
+			</div>
+		</article>
+
+
+		<article id="ph_panel">
+			<table>
+				<tr>
+					<td colspan="2"><a href="img_fr/ph_01.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_01.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+					<td rowspan="2"><a href="img_fr/ph_02.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_02.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+					<td><a href="img_fr/ph_03.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_03.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+				</tr>
+				<tr>
+					<td><a href="img_fr/ph_04.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_04.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+					<td rowspan="2"><a href="img_fr/ph_05.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_05.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+					<td><a href="img_fr/ph_06.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_06.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+				</tr>
+				<tr>
+					<td><a href="img_fr/ph_07.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_07.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+					<td colspan="2"><a href="img_fr/ph_08.jpg" rel="lightbox[enyaa]"><img src="img_fr/ph_panel_08.jpg" id="menu" class="pc" alt="ENYAA"></a></td>
+				</tr>
+			</table>
+		</article>
+
+
+
+		<article id="contact">
+			<h2>
+				<p id="contact_line1"><img src="img_fr/contact_title.png" class="pc" alt="CONTACT"></p>
+				<p id="contact_line2">+33 (0)1 40 26 78 25<br>
+					<span class="mail">contact@enyaa-paris.com</span>
+				</p>
+				<p class="sp" id="sp_contact_line2"><a href="tel:0140267825">+33 (0)1 40 26 78 25</a><br>
+					<span class="mail">contact@enyaa-paris.com</span>
+				</p>
+				<p id="contact_line3"><img src="img_fr/head_logo.png" class="pc" alt="CONTACT"></p>
+				<p id="contact_line4">＊全てのお値段にサービス料、消費税が<br class="sp">含まれております。<br>
+					＊ご予約はお電話にて承ります。<br>
+					＊ご予約の際に、アレルギー、お好み等を<br class="sp">お伝え下さいませ。</p>
+				<p id="contact_line5">*Nos prix s’entendent service et taxes compris<br>
+					*Réservation par téléphone<br>
+					*Nous vous recommandons de bien vouloir nous préciser vos allergies,<br>
+					produits à éviter lors de votre réservation afin d’être en mesure d’adapter le menu à votre convenance</p>
+			</h2>
+		</article>
+
+		<article id="foot">
+			<div id="foot_text">
+				<h2>
+					<p id="foot_line1"><img src="img_fr/foot_logo.png" class="pc" alt="ENYAA Saké & Champagne"></p>
+					<p id="foot_line2">37 rue de Montpensier 75001 Paris</p>
+					<p id="foot_line3">HORAIRE D'OUVERTURE
+					<table id="openhours">
+						<tr>
+							<td id="left">Mardi - Samedi</td>
+							<td class="right">　Déjeuner</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　12:00-14:00 (L.O.)</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　À emporter</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　11:00-13:00 (L.O.)</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　Dîner</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　19:00-22:00</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　À emporter</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　18:00-19:00 (L.O.)</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　Menu L.O.</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　21:00</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　Dernière entrée</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　21:30</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　À la carte L.O.</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　22:00</td>
+						</tr>
+
+						<tr>
+							<td>Dimanche</td>
+							<td class="right">　Brunch</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　13:00-19:00</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　(18:30 L.O.)</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　À emporter</td>
+						</tr>
+						<tr>
+							<td id="left"> </td>
+							<td class="right">　12:00-18:00 (L.O.)</td>
+						</tr>
+					</table>
+					</p>
+					<p id="foot_line4">Copyright © ENYAA-Paris. All rights reserved.</p>
+				</h2>
+			</div>
+
+			<div id="gmap">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215.29820421046495!2d2.3368047581031823!3d48.86574843844424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f110!3m3!1m2!1s0x47e66e24d089138f%3A0x7b09d1bf8b367656!2sEnYaa!5e0!3m2!1sja!2sjp!4v1623726417382!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+			<p class="sp">Copyright © ENYAA-Paris. All rights reserved.</p>
+		</article>
+
+		<p class="pagetop">
+			<a href="#"><img src="img_fr/to_the-top_btn.png" alt="TOP"></a>
+		</p>
+
+	</div>
+
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.menuslider').slick({
+				dots: true,
+				infinite: true,
+				speed: 300,
+				centerMode: true,
+				variableWidth: true,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.headslider').slick({
+				autoplay: true,
+				pauseOnHover: false,
+				autoplaySpeed: 3000,
+				speed: 2000,
+				dots: false,
+				infinite: true,
+				arrows: false,
+				centerMode: true,
+				variableWidth: true,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.headslider_sp').slick({
+				// 自動再生。trueで自動再生される。
+				autoplay: true,
+				// 自動再生時にドットにマウスオンで一時停止するかどうか
+				pauseOnHover: false,
+				// 自動再生で切り替えをする時間
+				autoplaySpeed: 3000,
+				// 自動再生や左右の矢印でスライドするスピード
+				speed: 2000,
+				// 画像下のドット（ページ送り）を表示
+				dots: false,
+				// 無限スクロールにするかどうか。最後の画像の次は最初の画像が表示される。
+				infinite: true,
+				// 左右の次へ、前へボタンを表示するかどうか
+				arrows: false,
+				// 表示中の画像を中央へ
+				centerMode: false,
+				variableWidth: false,
+				// スライドのエリアに画像がいくつ表示されるかを指定
+				slidesToShow: 1,
+				// 一度にスライドする数
+				slidesToScroll: 1
+			});
+		});
+	</script>
+	<script src="js/lightbox.js" type="text/javascript"></script>
+	<script>
+		lightbox.option({
+			'resizeDuration': 400,
+			'alwaysShowNavOnTouchDevices': true
+		})
+	</script>
+</body>
+
+</html>

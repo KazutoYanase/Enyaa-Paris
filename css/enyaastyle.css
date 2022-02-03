@@ -1,0 +1,646 @@
+@charset "utf-8";
+
+/*---------------------------------------------
+	Browser Default Initialization
+  ---------------------------------------------*/
+html {
+	overflow-y: scroll;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ul li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+section,
+nav,
+article,
+aside,
+hgroup,
+header,
+address,
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+object,
+embed {
+	vertical-align: top;
+}
+
+hr,
+legend {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+img,
+abbr,
+acronym,
+fieldset {
+	border: 0;
+}
+
+img {
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+/* ------ Anchor ------ */
+a {
+	outline: none;
+}
+
+a:link {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ------ フルードイメージ対応 ------ */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ------ Body ------ */
+/* ------ Font ------ */
+body {
+	font-family: "Garamond", "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	color: #111;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 45px;
+	text-align: left;
+	-webkit-text-size-adjust: 100%;
+	/* 文字サイズの自動調整機能のキャンセル */
+}
+
+/* ------ General Settings ------ */
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #fef7e9;
+	position: relative;
+}
+
+.sp {
+	display: none;
+}
+
+/* ------ Top ------ */
+#top {
+	width: 1000px;
+	height: 600px;
+	position: relative;
+}
+
+#top h1 {
+	height: 0;
+	overflow: hidden;
+}
+
+#top #menu {
+	position: absolute;
+	top: 15px;
+	left: 45px;
+	z-index: 100;
+}
+
+#top #french {
+	position: absolute;
+	top: 15px;
+	right: 55px;
+	z-index: 80;
+}
+
+#top #english {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	z-index: 81;
+}
+
+#top a:hover {
+	opacity: 0.4;
+}
+
+#top .headslider_sp {
+	display: none;
+}
+
+/* ------ Navigation ------ */
+#gNav {
+	width: 280px;
+	height: 100%;
+	position: absolute;
+	z-index: 90;
+	top: -100%;
+	transition: top 0.3s;
+	-webkit-transition: top 0.3s;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+#gNav:target {
+	top: 0px;
+}
+
+#gNav ul li a {
+	text-decoration: none;
+}
+
+#gNav ul li a .btn {
+	width: 200px;
+	height: 20px;
+	margin-left: 45px;
+	margin-top: 35px;
+}
+
+#gNav ul li a #btn_1st {
+	margin-top: 70px;
+}
+
+/* ------------ To the TOP ------------ */
+.pagetop {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+}
+
+.pagetop a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.pagetop a:hover {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
+
+/* ------ Message ------ */
+#wrapper #message {
+	width: 1000px;
+	height: 600px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#wrapper #message p#center {
+	margin: 40px 0;
+	font-size: 19px;
+	letter-spacing: 0.1em;
+}
+
+/* ------ News ------ */
+#wrapper #news {
+	width: 1000px;
+	height: 880px;
+	text-align: center;
+	line-height: 1em;
+	background-color: #c7b9b0;
+}
+
+#wrapper #news #newstitle {
+	font-size: 24px;
+	padding: 30px 0 25px;
+}
+
+#wrapper #news .ifrm-container {
+	width: 800px;
+	height: 760px;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	display: inline-block;
+	margin: 10px;
+}
+
+#wrapper #news .ifrm {
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
+/* ------ Food ------ */
+#wrapper #food {
+	width: 1000px;
+	height: 560px;
+	background-image: url(../img_fr/fd_bg.jpg);
+	text-align: center;
+	padding-top: 40px;
+}
+
+/* ------ Drink ------ */
+#wrapper #drink {
+	width: 1000px;
+	height: 560px;
+	background-image: url(../img_fr/fd_bg.jpg);
+	text-align: center;
+	padding-top: 40px;
+}
+
+/* ------ Contact ------ */
+#wrapper #contact {
+	width: 1000px;
+	height: 600px;
+	text-align: center;
+	line-height: 1.3em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#wrapper #contact #contact_line2 {
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	margin: 50px 0 25px;
+	line-height: 1.7em;
+}
+
+#wrapper #contact #contact_line2 .mail {
+	font-size: 17px;
+}
+
+#wrapper #contact #contact_line4 {
+	font-size: 13px;
+	margin: 20px 0 20px;
+}
+
+#wrapper #contact #contact_line5 {
+	font-size: 13px;
+	letter-spacing: 0.1em;
+}
+
+/* ------ Footer ------ */
+#wrapper #foot {
+	width: 1000px;
+	height: 1000px;
+	background-color: #c7b9b0;
+	overflow: hidden;
+}
+
+#wrapper #foot #foot_text {
+	float: left;
+	width: 323px;
+	text-align: center;
+	margin: 150px 87px 0 90px;
+}
+
+#wrapper #foot #foot_text #foot_line2 {
+	margin: 30px 0 40px;
+}
+
+#wrapper #foot #foot_text #foot_line3 {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+
+#openhours {
+	margin-bottom: 65px;
+}
+
+#openhours td {
+	font-size: 15px;
+	letter-spacing: 0.1em;
+	line-height: 25px;
+	text-align: right;
+}
+
+#openhours td#left {
+	width: 160px;
+}
+
+#openhours td.right {
+	text-align: left;
+}
+
+#wrapper #foot #foot_text #foot_line4 {
+	font-size: 12px;
+	letter-spacing: 0.1em;
+}
+
+#wrapper #foot #gmap {
+	float: left;
+	width: 470px;
+	height: 860px;
+	margin-top: 30px;
+}
+/* ------ PDF Menu ------ */
+#pdfmenu {
+	width: 100%;
+	background-color: #9d8d83;
+	text-align: center;
+	font-family: 'Baskervville', serif;
+	padding: 100px 0 80px;
+}
+#pdfmenu_title {
+	margin-bottom: 70px;
+	font-size: 32px;
+	color: #fff;
+	letter-spacing: 0.1em;
+}
+.pdfmenu_menu {
+	margin-bottom: 60px;
+	font-size: 25px;
+	color: #fff;
+	letter-spacing: 0.04em;
+	line-height: 30px;
+}
+.pdfmenu_menu span {
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/* ------ For SP ------ */
+@media screen and (max-width: 640px) {
+
+	/* ------ General Settings ------ */
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.sp {
+		display: inline;
+	}
+
+	/* ------ TOP ------ */
+	#top {
+		width: 100%;
+		height: auto;
+	}
+
+	#top .headslider {
+		display: none;
+	}
+
+	#top .headslider_sp {
+		display: block;
+		width: 100%;
+	}
+
+	#top .headslider_sp img {
+		width: 100%;
+	}
+
+	#top #berger {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		z-index: 101;
+	}
+
+	#top #reserve {
+		display: block;
+		font-size: 12px;
+		line-height: 40px;
+		text-align: center;
+		color: #fff;
+		background-color: #000;
+		width: 100px;
+		height: 40px;
+		position: fixed;
+		bottom: 45px;
+		right: 0;
+		z-index: 102;
+	}
+
+	#top #reserve a {
+		display: block;
+	}
+
+	/* ------------ To the TOP ------------ */
+	.pagetop {
+		bottom: 30px;
+		right: auto;
+		left: 30px;
+	}
+
+	/* ------ Message ------ */
+	#wrapper #message {
+		width: 100%;
+		height: 560px;
+		font-size: 13px;
+		line-height: 30px;
+	}
+
+	#wrapper #message p#center {
+		font-size: 14px;
+		margin: 50px 0;
+	}
+
+	/* ------ News ------ */
+	#wrapper #news {
+		width: 100%;
+		height: 820px;
+	}
+
+	#wrapper #news .ifrm-container {
+		width: 90%;
+		height: 700px;
+	}
+
+	/* ------ Food ------ */
+	#wrapper #food {
+		width: 100%;
+		height: auto;
+		background-image: url(../img_fr/sp_fd_bg.jpg);
+		text-align: center;
+		padding-top: 40px;
+	}
+
+	#wrapper #food img {
+		width: 87.5%;
+	}
+
+	#wrapper #food .menuslider {
+		display: none;
+	}
+
+	/* ------ Drink ------ */
+	#wrapper #drink {
+		width: 100%;
+		height: auto;
+		background-image: url(../img_fr/sp_fd_bg.jpg);
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	#wrapper #drink .pc {
+		display: none;
+	}
+
+	#wrapper #drink img {
+		width: 87.5%;
+	}
+
+	/* ------ Contact ------ */
+	#wrapper #contact {
+		width: 100%;
+		height: 680px;
+	}
+
+	#wrapper #contact_line2 {
+		display: none;
+	}
+
+	#wrapper #sp_contact_line2 {
+		display: block;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+		margin: 50px 0 25px;
+		line-height: 1.7em;
+	}
+
+	#wrapper #sp_contact_line2 a {
+		color: #000;
+	}
+
+	/* ------ Footer ------ */
+	#wrapper #foot {
+		width: 100%;
+		height: auto;
+	}
+
+	#wrapper #foot #foot_text {
+		width: 90%;
+		margin: 0 5%;
+		padding-top: 60px;
+	}
+
+	#openhours {
+		width: 100%;
+	}
+
+	#openhours td {
+		font-size: 14px;
+		letter-spacing: 0;
+	}
+
+	#openhours td#left {
+		width: auto;
+	}
+
+	#openhours td.right {
+		text-align: left;
+	}
+
+	#wrapper #foot #foot_text #foot_line4 {
+		display: none;
+	}
+
+	#wrapper #foot #gmap {
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	#wrapper #foot p.sp {
+		display: block;
+		font-size: 10px;
+		letter-spacing: 0.1em;
+		width: 90%;
+		margin: 0 5%;
+		text-align: center;
+	}
+	
+/* ------ PDF Menu ------ */
+	#pdfmenu {
+		padding: 100px 0 80px;
+	}
+	#pdfmenu_title {
+		margin-bottom: 70px;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+	}
+	.pdfmenu_menu {
+		margin-bottom: 60px;
+		font-size: 20px;
+		color: #fff;
+		letter-spacing: 0.04em;
+		line-height: 30px;
+	}
+	.pdfmenu_menu span {
+		font-size: 14px;
+	}
+	
+}

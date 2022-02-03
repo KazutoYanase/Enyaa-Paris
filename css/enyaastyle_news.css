@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*---------------------------------------------
+	Browser Default Initialization
+  ---------------------------------------------*/
+html {
+	overflow-y: scroll;
+}
+body, div, dl, dt, dd, ul, ul li, h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea, p, blockquote, th, td,
+section, nav, article, aside, hgroup, header, address,
+figure, figcaption {
+	margin: 0;
+	padding: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+caption, th {
+	text-align: left;
+}
+q:before ,q:after {
+	content: '';
+}
+object, embed {
+	vertical-align: top;
+}
+hr, legend {
+	display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+img, abbr, acronym, fieldset {
+	border: 0;
+}
+img {
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+ul li {
+	list-style-type: none;
+}
+/* ------ Anchor ------ */
+a {
+	outline: none;
+}
+a:link {
+	text-decoration: none;
+	color: #000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+/* ------ フルードイメージ対応 ------ */
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* ------ Body ------ */
+/* ------ Font ------ */
+body {
+	font-family:"Garamond" , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+	color: #111;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 45px;
+	text-align: left;
+	letter-spacing: -0.001em;		/* iOS4でのテキストの隙間への対応 */
+	-webkit-text-size-adjust: 100%;		/* 文字サイズの自動調整機能のキャンセル */
+	background-color: #fff;
+}
+/* ------ General Settings ------ */
+#wrapper {
+	margin: 0 auto;
+	position: relative;
+}
+.sp {
+	display: none;
+}
+/* ------ News ------ */
+#wrapper #news {
+	background-color:#fff;
+	color:#000;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.8em;
+}
+#wrapper #news .box0 {
+	width: 600px;
+    text-align: center;
+    margin: 2em auto;
+}
+#wrapper #news .box1 {
+	padding: 40px;
+}
+.layer_board_tit {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 10px 0 10px;
+}
+.layer_board_tit a {
+color: #00e;
+text-decoration: none;
+}
+.layer_board_tit a:hover {
+color: #0ee;
+text-decoration: underline;
+}
+.layer_board_tit a:visited {
+color:#00e;
+text-decoration: underline;
+}
+#wrapper #news .box2 {
+	margin: 25px 10% 0px;
+	text-align:center;
+}
+#wrapper #news .box3 {
+	padding-top: 25px;
+}
+#wrapper #news .box4 {
+	margin: 25px 10%;
+	text-align:center;
+}
+#wrapper #news .bodycopy {
+	font-size: 14px;
+	padding-bottom: 50px;
+	line-height: 1.7em;
+}
+#wrapper #news .boldcopy {
+	font-size: 21px;
+}
+.br-pc {
+	display:block;
+}
+#wrapper .bigfont {
+	font-size: 1.6em;
+	line-height: 2.5em;
+}
+#wrapper .heavyfont {
+	font-size:1.3em;
+	font-weight: 400;
+}
+/* ------ For SP ------ */
+@media screen and (max-width: 640px) {
+/* ------ General Settings ------ */
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+.sp {
+	display: inline;
+}
+#wrapper #news .box0 {
+	width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+/* ------ News ------ */
+#wrapper #news {
+	width: 100%;
+	font-size: 12px;
+	line-height: 2em;
+}
+#wrapper #news .box1 {
+	padding: 20px;
+}
+#wrapper #news .box2 {
+	text-align:left;
+}
+#wrapper .bigfont {
+	font-size: 1em;
+	line-height: 2em;
+}
+.br-pc {
+	display:none;
+}
+	}
