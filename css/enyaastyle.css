@@ -327,7 +327,7 @@ body {
 #wrapper #contact #contact_line2 {
 	font-size: 18px;
 	letter-spacing: 0.1em;
-	margin: 50px 0 25px;
+	margin: 50px 0 10px;
 	line-height: 1.7em;
 }
 
@@ -343,6 +343,17 @@ body {
 #wrapper #contact #contact_line5 {
 	font-size: 13px;
 	letter-spacing: 0.1em;
+}
+
+#wrapper #contact .mail__form {
+	font-size: 17px;
+	letter-spacing: 0.1em;
+	line-height: 1.75;
+	margin: 0 0 25px;
+}
+
+#wrapper #contact .mail__form a {
+	color: #111;
 }
 
 /* ------ Footer ------ */
